@@ -1,7 +1,5 @@
 name: Send mailer
-on: 
-  push:
-  pull_request:
+on: [push]
 jobs:
   send-mailer: 
     runs-on: ubuntu-latest
