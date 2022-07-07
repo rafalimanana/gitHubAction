@@ -10,6 +10,6 @@ jobs:
         uses: ravsamhq/notify-slack-action@v1
         with:
           status: ${{ job.status }} # required
-          notify_when: 'failure'
+          notify_when: 'success'
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
